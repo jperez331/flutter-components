@@ -26,7 +26,9 @@ class Listview2Screen extends StatelessWidget {
               Icons.arrow_forward_ios_rounded,
               color: Colors.red,
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, 'card');
+            },
           ),
           separatorBuilder: (_, __) => const Divider(),
         ));
