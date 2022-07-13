@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_components/router/app_routes.dart';
-import 'package:flutter_components/screens/screens.dart';
 import 'package:flutter_components/themes/app_theme.dart';
 
 void main() => runApp(MyApp());
