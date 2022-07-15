@@ -16,13 +16,28 @@ class CardScreen extends StatelessWidget {
           children: const [
             CustomCardType1(),
             SizedBox(height: 10),
-            CustomCardType2(),
+            CustomCardType2(
+              imageUrl:
+                  'https://frases.top/wp-content/uploads/2020/01/imagen-de-fornite.jpg',
+              description: 'Dark season Fortnite',
+            ),
             SizedBox(height: 10),
-            CustomCardType2(),
+            CustomCardType2(
+              imageUrl:
+                  'https://images.wallpapersden.com/image/download/fortnite-resistance-4k_bWdobmeUmZqaraWkpJRobWllrWdma2U.jpg',
+              description: 'Last Season Fortnite',
+            ),
             SizedBox(height: 10),
-            CustomCardType2(),
+            CustomCardType2(
+              imageUrl:
+                  'https://c4.wallpaperflare.com/wallpaper/332/936/882/season-5-8k-4k-fortnite-wallpaper-preview.jpg',
+              description: 'Old Season Fortnite',
+            ),
             SizedBox(height: 10),
-            CustomCardType2(),
+            CustomCardType2(
+              imageUrl: 'https://wallpaperaccess.com/full/7741406.jpg',
+              description: 'The Rock Season Fortnite',
+            ),
             SizedBox(height: 10),
           ],
         ));

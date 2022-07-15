@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_components/themes/app_theme.dart';
 
 class CustomCardType2 extends StatelessWidget {
-  const CustomCardType2({Key? key}) : super(key: key);
+  const CustomCardType2(
+      {Key? key, required this.imageUrl, required this.description})
+      : super(key: key);
+
+  final String imageUrl;
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -10,22 +15,21 @@ class CustomCardType2 extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
       elevation: 10,
-      shadowColor: AppTheme.primary.withOpacity(0.5),
+      shadowColor: AppTheme.primary,
       child: Column(
         children: [
-          const FadeInImage(
-            image: NetworkImage(
-                'https://frases.top/wp-content/uploads/2020/01/imagen-de-fornite.jpg'),
-            placeholder: AssetImage('assets/jar-loading.gif'),
+          FadeInImage(
+            image: NetworkImage(imageUrl),
+            placeholder: const AssetImage('assets/jar-loading.gif'),
             width: double.infinity,
             height: 230,
             fit: BoxFit.cover,
-            fadeInDuration: Duration(milliseconds: 300),
+            fadeInDuration: const Duration(milliseconds: 300),
           ),
           Container(
             alignment: AlignmentDirectional.centerEnd,
             padding: const EdgeInsets.only(right: 20, top: 10, bottom: 10),
-            child: const Text('Videojuego del año'),
+            child: Text(description),
           )
         ],
       ),
