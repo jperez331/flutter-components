@@ -34,8 +34,13 @@ class AppRoutes {
     MenuOption(
         route: 'avatar',
         icon: Icons.supervised_user_circle_outlined,
-        name: 'Circle Avatar',
-        screen: const AvatarScreen())
+        name: 'Avatar Circular',
+        screen: const AvatarScreen()),
+    MenuOption(
+        route: 'animated',
+        icon: Icons.whatshot_rounded,
+        name: 'Widget Animado',
+        screen: const AnimatedScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
