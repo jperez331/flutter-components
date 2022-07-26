@@ -39,6 +39,10 @@ class CardScreen extends StatelessWidget {
               description: 'The Rock Season Fortnite',
             ),
             SizedBox(height: 10),
+            CustomCardType2(
+                imageUrl:
+                    'https://i.pinimg.com/474x/1f/69/19/1f691958619348391c33b655b21522ac.jpg',
+                description: 'Esto es un elemento ')
           ],
         ));
   }
